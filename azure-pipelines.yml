@@ -18,3 +18,8 @@ steps:
 - script: |
     npm install
   displayName: 'npm install'
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 
+    artifact: 'jannerup'
+    publishLocation: 'pipeline'
