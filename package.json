@@ -9,6 +9,7 @@
   "author": "Rasmus J",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "utf8": "^3.0.0"
   }
 }

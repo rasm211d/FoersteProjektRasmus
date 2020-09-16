@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const hostname = 'localhost';
 const port = '3000';
+const utf8 = require('utf8');
 
 const server = http.createServer(function(req, res){
     let root = path.resolve('./wwwroot');
