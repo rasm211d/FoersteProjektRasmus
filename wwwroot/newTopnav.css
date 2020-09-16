@@ -1,0 +1,79 @@
+header {
+    background: #55d6aa;
+}
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+nav {
+    float: right;
+}
+
+.topnav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    color: #444;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 0;
+    letter-spacing: 3px;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+
+    position: relative;
+
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color:black;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+ nav a:hover {
+     color: black;
+     font-weight: 400;
+     font-size: 14px;
+ }
+
